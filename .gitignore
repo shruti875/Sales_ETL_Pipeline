@@ -1,0 +1,25 @@
+# --- Database Credentials (CRITICAL) ---
+# Assuming you use a config file or .env for DB_PASSWORD/URL
+.env
+
+# --- Data Files ---
+# Since you have sales_data.csv, you probably don't want to commit
+# your actual source data if it's large or contains private info.
+*.csv
+
+# --- Python & Environment ---
+__pycache__/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# --- IDE Files ---
+.vscode/
+.DS_Store
+
+# .gitignore
+.env
+__pycache__/
+.venv/
+*.csv
