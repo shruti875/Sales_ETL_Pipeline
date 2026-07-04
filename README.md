@@ -1,49 +1,108 @@
-Sales-ETL-Pipeline
-An automated ETL (Extract, Transform, Load) pipeline that streamlines the processing of retail sales data. This project demonstrates the ability to bridge raw data sources with structured analytical databases.
+# 📊 Sales ETL Pipeline
 
-🛠 Tech Stack
-Python: The core logic for data manipulation.
+An automated ETL (Extract, Transform, Load) pipeline that streamlines the processing of retail sales data.
+This project demonstrates how to transform raw data into a structured format and load it into a relational database for analysis.
 
-Pandas: Used for cleaning, filtering, and performing feature engineering on raw datasets.
+---
 
-SQLAlchemy: Integrated to handle the connection between Python and the database.
+## 🛠 Tech Stack
 
-PostgreSQL: Used for structured data storage and efficient SQL-based querying.
+* **Python** – Core logic for data processing
+* **Pandas** – Data cleaning, filtering, and feature engineering
+* **SQLAlchemy** – Database connection and ORM handling
+* **PostgreSQL** – Structured data storage and querying
 
-🚀 Key Features
-Automated Data Cleaning: Removes duplicates and handles missing values to ensure high data quality.
+---
 
-Feature Engineering: Automatically calculates Total_Revenue from quantity and price data.
+## 🚀 Key Features
 
-Efficient ETL Workflow: Extracts raw data, transforms it, and loads it into a relational PostgreSQL database in one seamless pipeline.
+* **Automated Data Cleaning**
+  Removes duplicates and handles missing values to ensure high-quality data
 
-SQL Integration: Demonstrates the ability to bridge Python-based data processing with professional-grade database management.
+* **Feature Engineering**
+  Automatically calculates `Total_Revenue` from quantity and price
 
-⚙️ How to Run
-Clone the repository:
+* **Efficient ETL Workflow**
+  Extracts raw data → transforms it → loads into PostgreSQL seamlessly
 
-Clone this repository:
+* **SQL Integration**
+  Bridges Python-based processing with a relational database system
 
-   ```bash
-   git clone https://github.com/shruti875/Sales_ETL_Pipeline.git
-   ```
+---
 
-Configure Database: Ensure PostgreSQL is running and create a database named sales_db.
+## ⚙️ How to Run
 
-Update Credentials: Open etl_pipeline.py and update your PostgreSQL username and password in the db_url variable.
+### 1️⃣ Clone the Repository
 
-Execute:
+```bash
+git clone https://github.com/shruti875/Sales_ETL_Pipeline.git
+cd Sales_ETL_Pipeline
+```
 
-Bash
+### 2️⃣ Configure Database
+
+* Make sure PostgreSQL is running
+* Create a database named: `sales_db`
+
+---
+
+### 3️⃣ Update Credentials
+
+Open `etl_pipeline.py` and update:
+
+```python
+db_url = "postgresql://username:password@localhost:5432/sales_db"
+```
+
+---
+
+### 4️⃣ Run the Pipeline
+
+```bash
 python etl_pipeline.py
-📊 Sample SQL Query
-Once the data is loaded, you can run this query in your database to get category insights:
+```
 
-SQL
+---
+
+## 📊 Sample SQL Query
+
+```sql
 SELECT "Category", SUM("Total_Revenue") AS total_earned
 FROM sales_records
 GROUP BY "Category"
 ORDER BY total_earned DESC;
+```
 
+---
+
+## 📸 Database Output Screenshot
 
 ![Database Screenshot](screenshot.png)
+
+---
+
+## 📌 Project Highlights
+
+* Demonstrates real-world ETL pipeline design
+* Shows integration between Python and SQL databases
+* Focuses on clean, structured, and reusable code
+* Suitable for data engineering and analytics portfolios
+
+---
+
+## 🔮 Future Improvements
+
+* Add scheduling (Airflow / Cron jobs)
+* Integrate cloud database (AWS RDS)
+* Add dashboard (Power BI / Tableau)
+* Handle large-scale data (Big Data tools)
+
+---
+
+## 🙌 Author
+
+**Shruti Vishwakarma**
+
+---
+
+⭐ If you found this useful, consider giving it a star!
