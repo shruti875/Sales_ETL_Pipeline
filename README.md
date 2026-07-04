@@ -46,5 +46,6 @@ GROUP BY "Category"
 ORDER BY total_earned DESC;
 
 
-![Database Screenshot](screenshot<img width="408" height="482" alt="screenshot" src="https://github.com/user-attachments/assets/93f152fb-a330-4b81-b97c-d8614fc48c76" />
+![Database Screenshot]
+(screenshot<img width="408" height="482" alt="screenshot" src="https://github.com/user-attachments/assets/93f152fb-a330-4b81-b97c-d8614fc48c76" />
 .png)
