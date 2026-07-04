@@ -79,8 +79,6 @@ ORDER BY total_earned DESC;
 
 <img width="408" height="482" alt="screenshot png" src="https://github.com/user-attachments/assets/3fa5c28d-13f0-447c-8aa7-749269e8eac5" />
 
-![Database Screenshot](screenshot.png)
-
 ---
 
 ## 📌 Project Highlights
