@@ -77,7 +77,7 @@ ORDER BY total_earned DESC;
 
 ## 📸 Database Output Screenshot
 
-![Database Screenshot](screenshot.png)
+![Database Screenshot](screenshots/screenshot.png)
 
 ---
 
