@@ -23,7 +23,7 @@ SQL Integration: Demonstrates the ability to bridge Python-based data processing
 Clone the repository:
 
 Bash
-git clone https://github.com/YOUR_USERNAME/Sales-ETL-Pipeline.git
+git clone https://github.com/shruti875/Sales-ETL-Pipeline.git
 Configure Database: Ensure PostgreSQL is running and create a database named sales_db.
 
 Update Credentials: Open etl_pipeline.py and update your PostgreSQL username and password in the db_url variable.
